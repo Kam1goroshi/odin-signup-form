@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+}
+
+.form-image{
+    flex: 1;
+    background-image: url(./pexels-mo-10643964.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+}
+
+.interactive-page{
+    flex:1;
+}
