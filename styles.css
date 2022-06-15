@@ -1,22 +1,78 @@
-html, body{
+:root {
+    --backgroundColor: linear-gradient(#554b45de, 70%, #584036);
+    --gold: #dab757;
+    --silver: #545454;
+    --black: #545454;
+}
+
+html,
+body {
     height: 100%;
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-main{
+main {
     display: flex;
 }
 
-.form-image{
-    flex: 1;
-    background-image: url(./pexels-mo-10643964.jpg);
+.form-image {
+    flex: 1 0 auto;
+    background-image: url(./odin_the_allfather_by_umta-dbf5luv.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-color: aliceblue;
+
 }
 
-.interactive-page{
-    flex:1;
+.interactive-page {
+    flex: 1;
+    flex-grow: 2;
+    background-image: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
+.interactive-page-item-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.interactive-page-form-container {
+    background-color: #8d8b821a;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.interactive-page-form-container > .user-info-form > label,
+input {
+    display: block;
+}
+
+.interactive-page-form-container > .user-info-form {
+    display: grid;
+    grid-template-areas:
+        "div div"
+        "div div"
+        "div div";
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+.interactive-page-form-container > h3 {
+    margin-top: 0;
+}
+
+.interactive-page-form-container > .user-info-form > div {
+    width: fit-content;
+    height: fit-content;
+}
+
+.form-submission-area{
+    padding-top: 30px;
+}
+
+
