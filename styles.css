@@ -1,6 +1,7 @@
 :root {
     --backgroundColor: linear-gradient(#554b45de, 70%, #584036);
-    --gold: #dab757;
+    --formColor: #8d8b821a;
+    --gold: #e7a84a;
     --silver: #545454;
     --black: #545454;
 }
@@ -39,8 +40,11 @@ main {
     padding-right: 50px;
 }
 
+.main-msg{
+    color: var(--gold);
+}
 .interactive-page-form-container {
-    background-color: #8d8b821a;
+    background-color: var(--formColor);
     padding-top: 40px;
     padding-bottom: 40px;
 }
