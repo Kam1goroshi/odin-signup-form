@@ -2,24 +2,30 @@
     --backgroundColor: linear-gradient(#554b45de, 70%, #584036);
     --formColor: #8d8b821a;
     --gold: #e7a84a;
-    --silver: #545454;
-    --black: #545454;
+    --silver: #99928c;
+    --black: #1b0c09;
 }
 
+@font-face {
+    font-family:norseBold;
+    src: url("./Norse-Bold.otf");
+}
 html,
 body {
     height: 100%;
+    width: 100%;
     display: flex;
     padding: 0;
     margin: 0;
 }
 
 main {
+    width: 100%;
     display: flex;
 }
 
 .form-image {
-    flex: 1 0 auto;
+    flex: 1;
     background-image: url(./odin_the_allfather_by_umta-dbf5luv.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -27,8 +33,7 @@ main {
 }
 
 .interactive-page {
-    flex: 1;
-    flex-grow: 2;
+    flex: 2;
     background-image: var(--backgroundColor);
     display: flex;
     flex-direction: column;
@@ -42,6 +47,8 @@ main {
 
 .main-msg{
     color: var(--gold);
+    font-family: norseBold;
+    font-size: 35px;
 }
 .interactive-page-form-container {
     background-color: var(--formColor);
@@ -67,6 +74,7 @@ input {
 }
 
 .interactive-page-form-container > h3 {
+    font-size: 25px;
     margin-top: 0;
 }
 
@@ -79,4 +87,21 @@ input {
     padding-top: 30px;
 }
 
+#form-submit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: #ce882d91;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    width:fit-content;
+    padding: 2px 9px;
+    cursor: pointer;
+    background-color: var(--silver);
+}
 
+.form-submission-area > p > a{
+    font-weight: 500;
+    color: rgb(39, 13, 7);
+    text-shadow: 1px 1px  rgb(124, 119, 117);
+    cursor: pointer;
+}
