@@ -7,9 +7,10 @@
 }
 
 @font-face {
-    font-family:norseBold;
+    font-family: norseBold;
     src: url("./Norse-Bold.otf");
 }
+
 html,
 body {
     height: 100%;
@@ -45,23 +46,28 @@ main {
     padding-right: 50px;
 }
 
-.main-msg{
+.main-msg {
     color: var(--gold);
     font-family: norseBold;
     font-size: 35px;
 }
+
 .interactive-page-form-container {
     background-color: var(--formColor);
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.interactive-page-form-container > .user-info-form > label,
+.interactive-page-form-container>.user-info-form>div>label,
 input {
     display: block;
 }
 
-.interactive-page-form-container > .user-info-form {
+.interactive-page-form-container>.user-info-form>div>input {
+    width: 400px;
+}
+
+.interactive-page-form-container>.user-info-form {
     display: grid;
     grid-template-areas:
         "div div"
@@ -73,35 +79,35 @@ input {
     row-gap: 20px;
 }
 
-.interactive-page-form-container > h3 {
+.interactive-page-form-container>h3 {
     font-size: 25px;
     margin-top: 0;
 }
 
-.interactive-page-form-container > .user-info-form > div {
+.interactive-page-form-container>.user-info-form>div {
     width: fit-content;
     height: fit-content;
 }
 
-.form-submission-area{
+.form-submission-area {
     padding-top: 30px;
 }
 
-#form-submit{
+#form-submit {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-color: #ce882d91;
     border-width: 2px;
     border-style: solid;
     border-radius: 5px;
-    width:fit-content;
+    width: fit-content;
     padding: 2px 9px;
     cursor: pointer;
     background-color: var(--silver);
 }
 
-.form-submission-area > p > a{
+.form-submission-area>p>a {
     font-weight: 500;
     color: rgb(39, 13, 7);
-    text-shadow: 1px 1px  rgb(124, 119, 117);
+    text-shadow: 1px 1px rgb(124, 119, 117);
     cursor: pointer;
 }
